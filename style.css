@@ -235,8 +235,8 @@ footer {
         grid-template-areas: 
         'myHeader'
         'myNavbar'
-        'mySidebar'
         'myContent'
+        'mySidebar'
         'myFooter';
     }
     .navbar a{
