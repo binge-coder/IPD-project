@@ -5,15 +5,17 @@
 }
 html{
     font-family: 'Saira', sans-serif;
-}
 
-body{
+    /* for laptops only not phones */
+    
     /* background-image: url('neon_bg.jpg');  */
-    background-image: url('planet.jpg'); 
+    background-image: url('planetHD.jpg'); 
 
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+   
+    height: 100vh; 
 }
 
 a{
@@ -227,7 +229,22 @@ footer {
     font-weight: bolder;
 }
 
-@media (max-width: 600px) {
+/* @media (max-width: 600px) and (orientation:portrait){} */
+/* @media (max-width: 600px) and (orientation:landscape){ */
+
+
+
+@media screen and (max-width: 600px){
+    html{
+        height: initial; /* important */
+        background-image: none; /*used to unset image from html to set image in body for mobile devices only*/
+    }
+    body {
+        background-image: url('planet.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
     .navbar ul {
         flex-direction: column;
         border-radius: 6px;
@@ -248,9 +265,7 @@ footer {
         justify-self: center;
         
     }
-    /* html{
-        margin:0px;
-    } */
+
 }
 /* 
 @keyframes calcSlide {
