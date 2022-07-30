@@ -14,7 +14,7 @@
 
 <body>
     <div class="containAll">
-        <header><a href="index.html"><b>Calculator</b></a></header> 
+        <header><a href="index.html"><b>Calculator ggg j</b></a></header> 
         <nav class="navbar">
             <ul>
                 <li><a href="index.html"><b>Calculator</b></a></li>
@@ -43,39 +43,48 @@
             <h2 style="text-align: center;">Let's calculate something</h1>
         <div class="calculator">
             <form name="calculation">
-                <input type="text" name="output" placeholder="use buttons to add input">
+                <input type="text" name="outputBox" placeholder="use buttons to add input">
                 <br>
-                <input type="button" value="0" onclick="document.calculation.output.value+='0'" style="background: #606060;">
-                <input type="button" value="(" onclick="document.calculation.output.value+='('" style="background: #606060;">
-                <input type="button" value=")" onclick="document.calculation.output.value+=')'" style="background: #606060;">
-                <input type="button" value="c" onclick="document.calculation.output.value=''" style="background: #dc143c;">
+                <!-- document.calculation.output.value+='0' -->
+                <input type="button" value="0" onclick="appendPress(this)" style="background: #606060;">
+                <input type="button" value="(" onclick="appendPress(this)" style="background: #606060;">
+                <input type="button" value=")" onclick="appendPress(this)" style="background: #606060;">
+                <input type="button" value="c" onclick="clearPress()" style="background: #dc143c;">
+
+                <!-- onclick="document.calculation.output.value=''" -->
+                <!-- clearPress() -->
+
                 <br>
-                <input type="button" value="7" onclick="document.calculation.output.value+='7'">
-                <input type="button" value="8" onclick="document.calculation.output.value+='8'">
-                <input type="button" value="9" onclick="document.calculation.output.value+='9'">
-                <input type="button" value="+" onclick="document.calculation.output.value+='+'" style="background: #606060;">
+                <input type="button" value="7" onclick="appendPress(this)">
+                <input type="button" value="8" onclick="appendPress(this)">
+                <input type="button" value="9" onclick="appendPress(this)">
+                <input type="button" value="+" onclick="appendPress(this)" style="background: #606060;">
                 <br>
-                <input type="button" value="4" onclick="document.calculation.output.value+='4'">
-                <input type="button" value="5" onclick="document.calculation.output.value+='5'">
-                <input type="button" value="6" onclick="document.calculation.output.value+='6'">
-                <input type="button" value="-" onclick="document.calculation.output.value+='-'" style="background: #606060;">
+                <input type="button" value="4" onclick="appendPress(this)">
+                <input type="button" value="5" onclick="appendPress(this)">
+                <input type="button" value="6" onclick="appendPress(this)">
+                <input type="button" value="-" onclick="appendPress(this)" style="background: #606060;">
                 <br>
-                <input type="button" value="1" onclick="document.calculation.output.value+='1'">
-                <input type="button" value="2" onclick="document.calculation.output.value+='2'">
-                <input type="button" value="3" onclick="document.calculation.output.value+='3'">
-                <input type="button" value="." onclick="document.calculation.output.value+='.'" style="background: #606060;">
+                <input type="button" value="1" onclick="appendPress(this)">
+                <input type="button" value="2" onclick="appendPress(this)">
+                <input type="button" value="3" onclick="appendPress(this)">
+                <input type="button" value="." onclick="appendPress(this)" style="background: #606060;">
                 <br>
-                <input type="button" value="x" onclick="document.calculation.output.value+='*'" style="background: #606060;">
-                <input type="button" value="/" onclick="document.calculation.output.value+='/'" style="background: #606060;">
-                <input type="button" value="mod" onclick="document.calculation.output.value+='%'" style="background: #606060;">
-                <input type="button" value="=" onclick="document.calculation.output.value=eval(document.calculation.output.value)" style="background: #ff9530;">
+                <input type="button" value="x" onclick="appendPress(this)" style="background: #606060;">
+                <input type="button" value="/" onclick="appendPress(this)" style="background: #606060;">
+                <input type="button" value="mod" onclick="appendPress(this)" style="background: #606060;">
+                <input type="button" value="=" onclick="evalFunc()" style="background: #ff9530;">
+
+                <!-- onclick="document.calculation.output.value=eval(document.calculation.output.value)" -->
+
                 <br>
     
             </form>
         </div>
         </div>
-        <!-- <div id="space">space area</div> -->
+        
         <footer> Made by Karan Kanwar </footer>
+        <script src="script.js"></script>
     </div>
 </body>
 
