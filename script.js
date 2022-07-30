@@ -11,3 +11,15 @@ function clearPress(){
 function evalFunc(){
     document.calculation.outputBox.value=eval(document.calculation.outputBox.value)
 }
+
+function appendDifferent(objButton){
+    if(objButton.value == 'x')
+    {
+        document.calculation.outputBox.value+='*';
+    }
+    else if(objButton.value == 'mod')
+    {
+        document.calculation.outputBox.value+='%';
+
+    }
+}
