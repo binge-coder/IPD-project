@@ -142,10 +142,21 @@ aside a:hover{
 .calculator {
     position: relative;
     width: 300px;
-    border: 3px solid black;
+    border:3px solid #1c1c1c;
+    /* border-left: 1px solid transparent;
+    border-right: 1px solid transparent;
+    border-top: 3px solid wheat;
+    border-bottom: 3px solid wheat; */
+    border-radius: 12px;
+
     margin: 30px auto;
-    border-radius: 5px;
-    background: #1c1c1c;
+
+    /* background: #1c1c1c; */
+
+    background-image: linear-gradient(90deg, #FC466B 0%, #3F5EFB 100%);
+    /* border:3px solid linear-gradient(315deg, #4d5dfb 0%, #08c8f6 74%); */
+    /* linear-gradient(90deg, #FC466B 0%, #3F5EFB 100%); */
+
 
     /* animation: linear;
     animation-name: calcSlide;
@@ -157,21 +168,26 @@ aside a:hover{
     /* box-shadow: h-shadow v-shadow blur spread color; */
     /* box-shadow: 2px 2px 2px 2px rgba(0,0,0,1); */
 }
+
 input[type=text]{
     position: relative;
     display: block;
-    width: 90%; /* change this and add box-sizing: border-box; in wild card (*)  */
+    width: 90%; 
     margin: 12px auto 0px; /* remove the last auto, its unnecessary*/
     font-size: 20px;
     text-align: center;
-    border: 1px solid #0099FF; /*she commented this later, you can uncomment it in your own version*/
+    border: 3px double black; 
     background-color: #4285f4;
+    /* background-image: linear-gradient(315deg, #4d5dfb 0%, #08c8f6 74%); */
+    border-radius: 5px;
 }
 
 input[type=button]{
-    color: black;
+    /* color: white; */
     position: relative;
-    background-color: #80868b ;
+    /* background-color: #9fa4c4; */
+    /* background-image: linear-gradient(315deg, #9fa4c4 0%, #9e768f 74%); */
+
     /* width: 20%; make it 25% and border-box in wild card */
     margin: 2%;
 
@@ -189,10 +205,38 @@ input[type=button]{
     border-radius: 10px; 
     /* box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.7); */
 }
+.number{
+    background-color: #045de9;
+    background-image: linear-gradient(315deg, #045de9 0%, #09c6f9 74%);
+    border-color: #1c1c1c;
+}
+.symbol{
+    /* color:blue; */
 
+    background-color: #9921e8;
+    background-image: linear-gradient(315deg, #9921e8 0%, #5f72be 74%);
+    border-color:#1c1c1c;
+}
+.clearSymbol{
+    /* color: white; */
+
+/* background: linear-gradient(to bottom right, #ED310B, #D62C51); */
+/* Created with https://www.css-gradient.com */
+background: #BC020C;
+    background: linear-gradient(to top left, #BC020C, #EF6E72);
+    border-color: #1c1c1c;
+    /* border: 1px solid #1c1c1c; */
+}
+
+.equalitySymbol{
+    background-color: #f9484a;
+    background-image: linear-gradient(315deg, #f9484a 0%, #fbd72b 74%);
+    border-color:#1c1c1c;
+}
 
 input[type=button]:hover{
-    background-color: #8c8c8c;
+/* border-color: #ad1deb; */
+border-color: dodgerblue;
 
 }
 
