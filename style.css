@@ -30,6 +30,23 @@ a{
     'myContent myContent myContent mySidebar '
     'myFooter  myFooter myFooter myFooter';
 }
+
+header{
+    
+    background: linear-gradient(90deg, #FC466B 0%, #3F5EFB 100%);
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    grid-area: myHeader;
+    height: 60px;
+    font-size: 2.5em;
+    border-radius: 6px;
+    font-weight: bolder;
+}
+header a {
+    color: inherit;
+}
+
 .navbar {
     grid-area: myNavbar;
 
@@ -72,21 +89,6 @@ a{
     font-weight: bolder;
 }
 
-header{
-    
-    background: linear-gradient(90deg, #FC466B 0%, #3F5EFB 100%);
-    color: white;
-    text-align: center;
-    text-transform: capitalize;
-    grid-area: myHeader;
-    height: 60px;
-    font-size: 2.5em;
-    border-radius: 6px;
-    font-weight: bolder;
-}
-header a {
-    color: inherit;
-}
 .content {
     grid-area: myContent;
     /* border: 3px double black; */
