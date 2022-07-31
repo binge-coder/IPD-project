@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Saira:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
 
 *{
     box-sizing: border-box;
@@ -182,6 +183,7 @@ input[type=text]{
     height: 35px;
     font-size: 18px;
     border-radius: 5px;
+    font-family: 'Varela Round', sans-serif;
 
 
 }
@@ -200,6 +202,9 @@ input[type=text]{
     height: 42px;
     font-size: 20px;
     border-radius: 10px; 
+    font-family: 'Varela Round', sans-serif;
+
+    /* font-weight: 600; */
     /* width: 50px; */   
 }
 .myCalcbuttons button:hover{
@@ -211,13 +216,17 @@ input[type=text]{
     background-color: #045de9;
     background-image: linear-gradient(315deg, #045de9 0%, #09c6f9 74%);
     border-color: #1c1c1c;
+
 }
 .symbol{
     /* background-color: #9921e8; */
     /* background-image: linear-gradient(315deg, #9921e8 0%, #5f72be 74%); */
     /* background: linear-gradient(to right, #da22ff, #9733ee); */
-    background: linear-gradient(to left, #834d9b, #d04ed6);
+    /* background: linear-gradient(to left, #834d9b, #d04ed6); */
+    background: linear-gradient(135deg, #cb60b3 0%,#ad1283 100%,#de47ac 100%,#ad1283 101%);
     border-color:#1c1c1c;
+    /* font-weight: bold; */    
+
 }
 .clearSymbol{
 
@@ -226,6 +235,7 @@ input[type=text]{
     background: linear-gradient(to top left, #BC020C, #EF6E72);
     border-color: #1c1c1c;
     /* border: 1px solid #1c1c1c; */
+    /* font-weight: bold; */
 }
 
 .equalitySymbol{
