@@ -26,6 +26,7 @@ a{
 .containAll {
     display: grid;
     grid-gap: 6px;
+    grid-template-columns: auto auto auto 25%;
     grid-template-areas: 
     'myHeader myHeader myHeader myHeader'
     'myNavbar myNavbar myNavbar myNavbar'
