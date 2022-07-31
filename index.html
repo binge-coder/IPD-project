@@ -14,7 +14,7 @@
 
 <body>
     <div class="containAll">
-        <header><a href="index.html"><b>Calculator</b></a></header> 
+        <header><a href="index.html"><b>Calculator in grid</b></a></header>
         <nav class="navbar">
             <ul>
                 <!-- style="background: -webkit-linear-gradient( #4d5dfb 0%, #08c8f6 74%); -webkit-background-clip: text;-webkit-text-fill-color: transparent;" -->
@@ -25,9 +25,11 @@
         </nav>
 
         <aside>
-            <div><a href="https://github.com/binge-coder/IPD-project/blob/main/README.md" target="_blank">How to use </a></div>
+            <div><a href="https://github.com/binge-coder/IPD-project/blob/main/README.md" target="_blank">How to use
+                </a></div>
             <div><a href="mailto:kanwarkartik@gmail.com">Feedback</a></div>
-            <br><hr>
+            <br>
+            <hr>
 
             <div class="heading_aside"><b>Reach out to me</b></div>
             <div><a href="https://github.com/binge-coder" target="_blank"> Github</a></div>
@@ -40,48 +42,45 @@
         </article> -->
         <div class="content">
             <h2 style="text-align: center;">Let's calculate something</h2>
-        <div class="calculator">
-            <form name="calculation">
-                <input type="text" name="outputBox" placeholder="use buttons to add input">
-                <br>
-                <!-- document.calculation.output.value+='0' -->
-                <input type="button" value="0" onclick="appendPress(this)" class="number">
-                <input type="button" value="(" onclick="appendPress(this)" class="symbol">
-                <input type="button" value=")" onclick="appendPress(this)" class="symbol">
-                <input type="button" value="clear" onclick="clearPress()" class="clearSymbol">
+            <div class="calculator">
+                <form name="calculation">
+                    <input type="text" name="outputBox" placeholder="use buttons to add input">
+                </form>
+                <div class="myCalcbuttons">
+                    <!-- document.calculation.output.value+='0' -->
+                    <button type="button" value="0" onclick="appendPress(this)" class="number">0</button>
+                    <button type="button" value="(" onclick="appendPress(this)" class="symbol">(</button>
+                    <button type="button" value=")" onclick="appendPress(this)" class="symbol">)</button>
+                    <button type="button" value="clear" onclick="clearPress()" class="clearSymbol">clear</button>
 
-                <!-- onclick="document.calculation.output.value=''" -->
-                <!-- clearPress() -->
+                    <!-- onclick="document.calculation.output.value=''" -->
+                    <!-- clearPress() -->
 
-                <br>
-                <input type="button" value="7" onclick="appendPress(this)" class="number">
-                <input type="button" value="8" onclick="appendPress(this)" class="number">
-                <input type="button" value="9" onclick="appendPress(this)" class="number">
-                <input type="button" value="+" onclick="appendPress(this)" class="symbol">
-                <br>
-                <input type="button" value="4" onclick="appendPress(this)" class="number">
-                <input type="button" value="5" onclick="appendPress(this)" class="number">
-                <input type="button" value="6" onclick="appendPress(this)" class="number">
-                <input type="button" value="-" onclick="appendPress(this)" class="symbol">
-                <br>
-                <input type="button" value="1" onclick="appendPress(this)" class="number">
-                <input type="button" value="2" onclick="appendPress(this)" class="number">
-                <input type="button" value="3" onclick="appendPress(this)" class="number">
-                <input type="button" value="." onclick="appendPress(this)" class="symbol">
-                <br>
-                <input type="button" value="x" onclick="appendDifferent(this)" class="symbol">
-                <input type="button" value="/" onclick="appendPress(this)" class="symbol">
-                <input type="button" value="mod" onclick="appendDifferent(this)" class="symbol">
-                <input type="button" value="=" onclick="evalFunc()" class="equalitySymbol">
+                    <button type="button" value="7" onclick="appendPress(this)" class="number">7</button>
+                    <button type="button" value="8" onclick="appendPress(this)" class="number">8</button>
+                    <button type="button" value="9" onclick="appendPress(this)" class="number">9</button>
+                    <button type="button" value="+" onclick="appendPress(this)" class="symbol">+</button>
 
+                    <button type="button" value="4" onclick="appendPress(this)" class="number">4</button>
+                    <button type="button" value="5" onclick="appendPress(this)" class="number">5</button>
+                    <button type="button" value="6" onclick="appendPress(this)" class="number">6</button>
+                    <button type="button" value="-" onclick="appendPress(this)" class="symbol">-</button>
+
+                    <button type="button" value="1" onclick="appendPress(this)" class="number">1</button>
+                    <button type="button" value="2" onclick="appendPress(this)" class="number">2</button>
+                    <button type="button" value="3" onclick="appendPress(this)" class="number">3</button>
+                    <button type="button" value="." onclick="appendPress(this)" class="symbol">.</button>
+
+                    <button type="button" value="x" onclick="appendDifferent(this)" class="symbol">x</button>
+                    <button type="button" value="/" onclick="appendPress(this)" class="symbol">/</button>
+                    <button type="button" value="mod" onclick="appendDifferent(this)" class="symbol">mod</button>
+                    <button type="button" value="=" onclick="evalFunc()" class="equalitySymbol">=</button>
+                </div>
                 <!-- onclick="document.calculation.output.value=eval(document.calculation.output.value)" -->
 
-                <br>
-    
-            </form>
+            </div>
         </div>
-        </div>
-        
+
         <footer> Made by Karan Kanwar </footer>
     </div>
     <script src="script.js"></script>

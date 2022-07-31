@@ -147,104 +147,67 @@ aside a:hover{
     font-weight: bolder;
 }
 
-/* calculator */
-.calculator {
-    position: relative;
-    width: 300px;
-    /* border-top:3px solid #9921e8;
-    border-left:3px solid #9921e8;
-    border-right:3px solid #08c8f6;
-    border-bottom:3px solid #08c8f6; */
+/* calculator start*/
+
+.calculator{
     border: 3px solid #08c8f6;
-
-    /* border-left: 1px solid transparent;
-    border-right: 1px solid transparent;
-    border-top: 3px solid wheat;
-    border-bottom: 3px solid wheat; */
     border-radius: 12px;
-
-    margin: 30px auto;
-
-    /* background: #1c1c1c; */
-
-    /* background-image: linear-gradient(90deg, #FC466B 0%, #3F5EFB 100%); */
-
-
-    /* background-color: #1c1c1c; */
     background-color: rgba(0,0,0,0);
     backdrop-filter: blur(30px); /* the less the value the less blur there is */
-/* background-image: linear-gradient(315deg, #1fd1f9 0%, #b621fe 74%); */
 
-    
-    /* border:3px solid linear-gradient(315deg, #4d5dfb 0%, #08c8f6 74%); */
-    /* linear-gradient(90deg, #FC466B 0%, #3F5EFB 100%); */
-
-
-    /* animation: linear;
-    animation-name: calcSlide;
-    animation-duration: 4s; */
-
-    /* background: linear-gradient(90deg, #00d2ff 0%, #3a47d5 100%); */
-    /* background-image: linear-gradient(to right, #0f0c29, #302b63, #24243e); */
-    /* padding: 50px; */
-    /* box-shadow: h-shadow v-shadow blur spread color; */
-    /* box-shadow: 2px 2px 2px 2px rgba(0,0,0,1); */
+    width: 300px;   /*important*/
 }
 
 input[type=text]{
     position: relative;
-    display: block;
-    width: 90%; 
-    margin: 12px auto 0px; /* remove the last auto, its unnecessary*/
-    font-size: 20px;
     text-align: center;
     border: 3px double black; 
     background-color: #4285f4;
-    /* background-image: linear-gradient(315deg, #4d5dfb 0%, #08c8f6 74%); */
-    border-radius: 5px;
-}
-
-input[type=button]{
-    /* color: white; */
-    position: relative;
-    /* background-color: #9fa4c4; */
-    /* background-image: linear-gradient(315deg, #9fa4c4 0%, #9e768f 74%); */
-
-    /* width: 20%; make it 25% and border-box in wild card */
-    margin: 2%;
-
-    width: 20%; /*make it 25% and border-box in wild card*/
-    /* margin: 5px 6px; */
-    /* margin-inline-start: 12px; */
-    /* margin-inline-end: 12px ; */
-    /* margin-left: 3px; */
-
-
-    padding-top: 8px;
-    padding-bottom: 7px;
+    
+    display: block;
+    width: 90%;
+    margin: 12px auto 10px;
+    height: 32px;
     font-size: 20px;
-    /* font-weight: bold; */
-    border-radius: 10px; 
-    /* box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.7); */
+    border-radius: 5px;
+
 }
+
+.myCalcbuttons{ 
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* margin: 6px 5px ; */
+    grid-row-gap: 15px;
+    grid-column-gap: 15px;
+    padding: 10px;
+    
+}
+
+.myCalcbuttons button{
+    height: 42px;
+    font-size: 20px;
+    border-radius: 10px; 
+    /* width: 50px; */   
+}
+.myCalcbuttons button:hover{
+    border-color: dodgerblue;
+}
+
+/* button specific styling */
 .number{
     background-color: #045de9;
     background-image: linear-gradient(315deg, #045de9 0%, #09c6f9 74%);
     border-color: #1c1c1c;
 }
 .symbol{
-    /* color:blue; */
-
     background-color: #9921e8;
     background-image: linear-gradient(315deg, #9921e8 0%, #5f72be 74%);
     border-color:#1c1c1c;
 }
 .clearSymbol{
-    /* color: white; */
 
-/* background: linear-gradient(to bottom right, #ED310B, #D62C51); */
-/* Created with https://www.css-gradient.com */
-background: #BC020C;
+    /* background: linear-gradient(to bottom right, #ED310B, #D62C51); */
+    /* background: #BC020C; */
     background: linear-gradient(to top left, #BC020C, #EF6E72);
     border-color: #1c1c1c;
     /* border: 1px solid #1c1c1c; */
@@ -254,12 +217,6 @@ background: #BC020C;
     background-color: #f9484a;
     background-image: linear-gradient(315deg, #f9484a 0%, #fbd72b 74%);
     border-color:#1c1c1c;
-}
-
-input[type=button]:hover{
-/* border-color: #ad1deb; */
-border-color: dodgerblue;
-
 }
 
 /* calculator end */
