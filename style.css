@@ -2,6 +2,9 @@
 
 *{
     box-sizing: border-box;
+    /* making margin and padding 0 fixed many bugs, its important */
+    margin: 0px; 
+    padding: 0px;
 }
 html{
     font-family: 'Saira', sans-serif;
@@ -27,6 +30,11 @@ a{
     display: grid;
     grid-gap: 6px;
     grid-template-columns: auto auto auto 25%;
+
+    /* if make changes in grid-template-rows, then you may need to make changes in @media rule as well in case mobile view is breaking. i have set navbar width as 40px and inherited grid-template-rows but the mobile view is still fine instead breaking because navbar gridbox of 40px should have mess up layout. I have no idea why this is happening*/
+    grid-template-rows: 60px 40px auto 30px ; 
+    
+    min-height: 100vh;
     grid-template-areas: 
     'myHeader myHeader myHeader myHeader'
     'myNavbar myNavbar myNavbar myNavbar'
@@ -42,9 +50,7 @@ header{
     text-align: center;
     text-transform: uppercase;
     grid-area: myHeader;
-    height: 60px;
     font-size: 2.5em;
-    border-radius: 6px;
     font-weight: bolder;
 }
 header a {
@@ -99,8 +105,7 @@ header a {
     /* border: 3px double black; */
     /* border-radius: 6px; */
     color: #FCE2DB;
-    justify-self: center;
-    
+    justify-self: center;    
 }
 
 hr{
@@ -278,6 +283,10 @@ footer {
     }
     .containAll {
         grid-template-columns: auto;
+        
+        /* this property = ( grid-template-rows: inherit ) is important  */
+        grid-template-rows: inherit; 
+
         grid-template-areas: 
         'myHeader'
         'myNavbar'
