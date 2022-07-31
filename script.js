@@ -12,14 +12,15 @@ function evalFunc(){
     document.calculation.outputBox.value=eval(document.calculation.outputBox.value)
 }
 
-function appendDifferent(objButton){
-    if(objButton.value == 'x')
-    {
-        document.calculation.outputBox.value+='*';
-    }
-    else if(objButton.value == 'mod')
-    {
-        document.calculation.outputBox.value+='%';
+// Legacy Code (when i was using <input> instead of buttons)
+// function appendDifferent(objButton){
+//     if(objButton.value == 'x')
+//     {
+//         document.calculation.outputBox.value+='*';
+//     }
+//     else if(objButton.value == 'mod')
+//     {
+//         document.calculation.outputBox.value+='%';
 
-    }
-}
+//     }
+// }
