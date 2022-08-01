@@ -3,5 +3,5 @@
 2. When you are done with writing the expression, press ' = ' button to get the answer.
 
 # Things to know
-* *mod* :  The 'mod' button on calculator refers to modulus operator. It produces remainder of an integer division
-* *clear* : the 'clear' button on calculator clears the expression screen. It basically resets anything you typed earlier
+* **C** : the 'C' button on calculator clears the expression screen. It basically resets anything you typed earlier
+* &#8617; : the &#8617; button removes the character at the end of the expression (basically backspace).
