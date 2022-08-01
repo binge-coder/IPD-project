@@ -1,9 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Saira:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
-
-.myTooltip{
-    visibility: hidden;
-}
+/* @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
 
 *{
     box-sizing: border-box;
@@ -182,12 +179,13 @@ input[type=text]{
     color: white;
     
     display: block;
-    width: 90%;
+    width: 93%;
     margin: 12px auto 10px;
     height: 35px;
     font-size: 18px;
     border-radius: 5px;
-    font-family: 'Varela Round', sans-serif;
+    /* font-family: 'Varela Round', sans-serif; */
+    font-family: 'Source Code Pro', monospace;
 
 
 }
@@ -206,7 +204,9 @@ input[type=text]{
     height: 42px;
     font-size: 20px;
     border-radius: 10px; 
-    font-family: 'Varela Round', sans-serif;
+    /* font-family: 'Varela Round', sans-serif; */
+    font-family: 'Source Code Pro', monospace;
+
 
     /* font-weight: 600; */
     /* width: 50px; */   

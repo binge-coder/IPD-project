@@ -1,19 +1,18 @@
-function checkLength(){
-    if(document.calculation.outputBox.value.length == 22)
+function lengthExceed(){
+    if(document.calculation.outputBox.value.length > 23)
     {
-        // myElement = $(".myTooltip");
-        // myElement.show();
-        myElements = document.getElementsByClassName("myTooltip");
-        myElements.style.display = ""; 
-
+        alert("can't show more than 23 characters");
+        return true;
     }
+    return false;    
 }
 
 
 function appendPress(objButton){  
     // alert(objButton.value);
-    checkLength();
-    document.calculation.outputBox.value+=objButton.value;
+    if(lengthExceed() == false){
+        document.calculation.outputBox.value+=objButton.value;
+    }
 }
 
 function clearPress(){
