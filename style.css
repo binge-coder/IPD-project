@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Saira:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
 
+.myTooltip{
+    visibility: hidden;
+}
+
 *{
     box-sizing: border-box;
     /* making margin and padding 0 fixed many bugs, its important */

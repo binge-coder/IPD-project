@@ -1,5 +1,18 @@
+function checkLength(){
+    if(document.calculation.outputBox.value.length == 22)
+    {
+        // myElement = $(".myTooltip");
+        // myElement.show();
+        myElements = document.getElementsByClassName("myTooltip");
+        myElements.style.display = ""; 
+
+    }
+}
+
+
 function appendPress(objButton){  
     // alert(objButton.value);
+    checkLength();
     document.calculation.outputBox.value+=objButton.value;
 }
 
