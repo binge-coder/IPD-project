@@ -5,5 +5,5 @@
 * use grid layout for calcultor buttons - Done
 * add more buttons like backspace (del).( easier with grid layout)
 * add animations
-* fix bug: white space in landscape mode of mobile (something to do with background) - Done
-* add tooltip text for all operations (w3schools tutorial)
+* fix bug: white space in landscape mode of mobile (something to do with background) - Done (no bug still there)
+* add tooltip text for some operations (w3schools tutorial)
