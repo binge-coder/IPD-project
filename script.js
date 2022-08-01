@@ -1,6 +1,18 @@
+function lengthExceed(){
+    if(document.calculation.outputBox.value.length > 23)
+    {
+        alert("can't show more than 23 characters");
+        return true;
+    }
+    return false;    
+}
+
+
 function appendPress(objButton){  
     // alert(objButton.value);
-    document.calculation.outputBox.value+=objButton.value;
+    if(lengthExceed() == false){
+        document.calculation.outputBox.value+=objButton.value;
+    }
 }
 
 function clearPress(){
