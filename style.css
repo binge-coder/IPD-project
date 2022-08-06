@@ -200,7 +200,7 @@ aside a:hover{
 
 .myCalcbuttons button{
     height: 46px;
-    font-size: 20px;
+    font-size: 26px;
     border-radius: 10px; 
     /* font-family: 'Source Code Pro', monospace; */
     font-family: 'Source Sans Pro', sans-serif;
@@ -230,7 +230,7 @@ aside a:hover{
 
 .mySciCalcbuttons button{
     height: 45px;
-    font-size: 20px;
+    font-size: 22px;
     border-radius: 10px; 
     /* font-family: 'Source Code Pro', monospace; */
     font-family: 'Source Sans Pro', sans-serif;
