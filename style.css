@@ -153,8 +153,12 @@ aside a{
 
 aside a:hover{
     background-image: linear-gradient(315deg, #4d5dfb 0%, #08c8f6 74%); /* BEST for hover*/
-    color: #1c1c1c;
+    /* color: #1c1c1c; */
+    color: black;
     font-weight: bolder;
+    border-color: black;
+    /* border: 2px solid black; */
+
 }
 
 /* calculator start*/
@@ -243,7 +247,32 @@ aside a:hover{
     border-color: dodgerblue;
 }
 
+#radioButtons{
+    display: flex;
+    justify-content: center;
+    /* margin: 4px 0px; */
+}
 
+label{
+    border: 1px solid white;
+    color: white;
+    font-weight: bold;
+    border-radius: 15px;
+    background: rgba(1,0,0,0);
+    backdrop-filter: blur(30px);
+    margin: 4px 5px;
+    padding: 2px 6px;
+
+}
+
+label:hover{
+    background: linear-gradient(to right, #7f00ff, #e100ff);
+    /* background-image: linear-gradient(315deg, #4d5dfb 0%, #08c8f6 74%); */
+
+    /* border: 2px solid black; */
+    border-color: black;
+    color: black;
+}
 
 
 /* Scientific calculator buttons end */
@@ -261,7 +290,9 @@ aside a:hover{
     /* background-image: linear-gradient(315deg, #9921e8 0%, #5f72be 74%); */
     /* background: linear-gradient(to right, #da22ff, #9733ee); */
     /* background: linear-gradient(to left, #834d9b, #d04ed6); */
-    background: linear-gradient(135deg, #cb60b3 0%,#ad1283 100%,#de47ac 100%,#ad1283 101%);
+    /* background: linear-gradient(135deg, #cb60b3 0%,#ad1283 100%,#de47ac 100%,#ad1283 101%); */
+    /* background: mediumpurple; */
+    background: linear-gradient(to top left, darkorchid, magenta);
     border-color:#1c1c1c;
     /* font-weight: bold; */    
 
@@ -317,7 +348,8 @@ footer {
     background-image: linear-gradient(315deg, #4d5dfb 0%, #08c8f6 74%); /* BEST */
     color: black;
     font-weight: bolder;
-    /* border: 2px solid #1c1c1c; */
+    /* border: 2px solid black; */
+    border-color: black;
 }
 #current_page{
     color: white;

@@ -132,13 +132,13 @@ function appendVisible(objButton){
         // document.calculation.outputBox.value+='\u03C0'; //unicode for pi
         myVisibleExpression.push('\u03C0');
     }
-    else if(objButton.value == 'Math.log(')
+    else if(objButton.value == 'Math.log(') //natural log
     {
-        myVisibleExpression.push('\u33D1(');
+        myVisibleExpression.push('ln(');
     }
     else if(objButton.value == 'Math.log10(')
     {
-        myVisibleExpression.push('\u33D2\u2081\u2080(');
+        myVisibleExpression.push('log\u2081\u2080(');
         // log<sub>10</sub>( symbol in unicode
     }
     else if(objButton.value == 'Math.sin(')
