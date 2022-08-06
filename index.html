@@ -40,9 +40,13 @@
 
         <div class="content">
             <br><h2 style="text-align: center;">Let's calculate something</h2><br>
+
             <div class="calculator">
                 <form name="calculation">
-                    <input type="text" name="outputBox" placeholder="use buttons to add input" autocomplete="off" disabled="disabled">
+                    <input type="text" name="outputBox" id="visibleBox" placeholder="use buttons to add input" autocomplete="off" disabled="disabled">
+
+                    <!-- do this: type="hidden" -->
+                    <input type="hidden" name="JSoutputBox" id="invisibleBox" placeholder="jsBox" autocomplete="off" disabled="disabled">
                 </form>
                 <div class="myCalcbuttons">
                     <!-- document.calculation.output.value+='0' -->

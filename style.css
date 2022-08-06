@@ -169,7 +169,7 @@ aside a:hover{
     width: 300px;   /*important*/
 }
 
-input[type=text]{
+#visibleBox{
     position: relative;
     text-align: center;
     border: 3px solid #08c8f6;
@@ -186,8 +186,6 @@ input[type=text]{
     border-radius: 5px;
     /* font-family: 'Varela Round', sans-serif; */
     font-family: 'Source Code Pro', monospace;
-
-
 }
 
 .myCalcbuttons{ 
