@@ -1,3 +1,12 @@
+const myJsExpression = [];
+
+function evalExpression()
+{
+    var answerString = myJsExpression.join('');
+    document.calculation.outputBox.value = eval(answerString);
+
+}
+
 function lengthExceed(){
     if(document.calculation.outputBox.value.length > 23)
     {
@@ -13,24 +22,36 @@ function appendPress(objButton){
     if(lengthExceed() == false){
         // document.calculation.outputBox.value+=objButton.value;
         appendVisible(objButton);
-        document.calculation.JSoutputBox.value+=objButton.value;
+        
+        // for expressionlist
+        myJsExpression.push(objButton.value);
+
+        // document.calculation.JSoutputBox.value+=objButton.value;
+
     }
 }
 
 function clearPress(){
     document.calculation.outputBox.value='';
-    document.calculation.JSoutputBox.value='';
+    // document.calculation.JSoutputBox.value='';
+    myJsExpression.length = 0;
+
+    // myJsExpression = []; not working idk why? maybe its making a new array without deleting the previous array ?
+    
 }
 
 function evalFunc(){
     // document.calculation.outputBox.value=eval(document.calculation.outputBox.value)
 
     // replacing value of visible field with answer
-    document.calculation.outputBox.value=eval(document.calculation.JSoutputBox.value);
+    //  CHANGE THIS FJ;KKKJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJ
+    // document.calculation.outputBox.value=eval(document.calculation.JSoutputBox.value);
 
     // replacing value of invisible field with answer
-    document.calculation.JSoutputBox.value=eval(document.calculation.JSoutputBox.value);
+    // document.calculation.JSoutputBox.value=eval(document.calculation.JSoutputBox.value);
 
+    // get answer from parsing array
+    evalExpression();
 }
 
 function backSpace() {
@@ -41,6 +62,8 @@ function backSpace() {
     // backspace for invisible box
     var mystringInvisible = document.calculation.JSoutputBox.value;
     document.calculation.JSoutputBox.value = mystringInvisible.substring(0,(mystringInvisible.length)-1);  
+
+
   }
 
 // Legacy Code (when i was using <input> instead of buttons)
