@@ -12,3 +12,5 @@
 * add animations
 * fix bug: white space in landscape mode of mobile (something to do with background) - Done (no bug still there)
 * add tooltip text for some operations (w3schools tutorial)
+
+* if the phone is in landscape mode, use rotated wallpaper (rotated at 90deg)

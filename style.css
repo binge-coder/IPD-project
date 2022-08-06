@@ -165,7 +165,7 @@ aside a:hover{
     background-color: rgba(0,0,0,0);
     backdrop-filter: blur(30px); /* the less the value the less blur there is */
 
-    width: 300px;   /*important*/
+    width: 310px;   /*important*/
 }
 
 #visibleBox{
@@ -192,14 +192,14 @@ aside a:hover{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     /* margin: 6px 5px ; */
-    grid-row-gap: 9px;
-    grid-column-gap: 15px;
+    grid-row-gap: 10px;
+    grid-column-gap: 10px;
     padding: 10px;
     
 }
 
 .myCalcbuttons button{
-    height: 42px;
+    height: 46px;
     font-size: 20px;
     border-radius: 10px; 
     /* font-family: 'Source Code Pro', monospace; */
@@ -222,14 +222,14 @@ aside a:hover{
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     /* margin: 6px 5px ; */
-    grid-row-gap: 9px;
-    grid-column-gap: 10px;
-    padding: 10px;
+    grid-row-gap: 6px;
+    grid-column-gap: 6px;
+    padding: 6px;
     
 }
 
 .mySciCalcbuttons button{
-    height: 42px;
+    height: 45px;
     font-size: 20px;
     border-radius: 10px; 
     /* font-family: 'Source Code Pro', monospace; */
