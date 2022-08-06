@@ -10,6 +10,38 @@ function lengthExceed(){
     return false;    
 }
 
+function appendJsExpression(objButton)
+{
+    if(objButton.value == "Math.sin(" || objButton.value == "Math.cos(" || objButton.value == "Math.tan(" )
+    {
+        if(document.getElementById('deg').checked)
+        {
+            var converted = objButton.value+"(Math.PI/180)*";
+            myJsExpression.push(converted);
+        }
+        else //when radian is checked
+        {
+            myJsExpression.push(objButton.value);
+        }
+    }
+    else if(objButton.value == "Math.asin(" || objButton.value == "Math.acos(" || objButton.value == "Math.atan(" )
+    {
+        if(document.getElementById('deg').checked)
+        {
+            var converted = "(180/Math.PI)*"+objButton.value;
+            myJsExpression.push(converted);
+        }
+        else //when radian is checked
+        {
+            myJsExpression.push(objButton.value);
+        }
+ 
+    }
+    else
+    {
+        myJsExpression.push(objButton.value);
+    }
+}
 
 function appendPress(objButton){  
     // alert(objButton.value);
@@ -18,7 +50,8 @@ function appendPress(objButton){
         appendVisible(objButton);
         
         // for jsexpressionlist
-        myJsExpression.push(objButton.value);
+        appendJsExpression(objButton);
+        // myJsExpression.push(objButton.value);
 
         // document.calculation.JSoutputBox.value+=objButton.value;
 
