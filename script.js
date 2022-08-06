@@ -26,10 +26,10 @@ function evalFunc(){
     // document.calculation.outputBox.value=eval(document.calculation.outputBox.value)
 
     // replacing value of visible field with answer
-    document.calculation.outputBox.value=eval(document.calculation.JSoutputBox.value) 
+    document.calculation.outputBox.value=eval(document.calculation.JSoutputBox.value);
 
     // replacing value of invisible field with answer
-    document.calculation.JSoutputBox.value=eval(document.calculation.JSoutputBox.value) 
+    document.calculation.JSoutputBox.value=eval(document.calculation.JSoutputBox.value);
 
 }
 
