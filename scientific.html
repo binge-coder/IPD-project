@@ -14,7 +14,7 @@
 
 <body>
     <div class="containAll">
-        <header><a href="index.html"><b>Calculator</b></a></header>
+        <header><a href="index.html"><b>Calculator USING ARRAY</b></a></header>
         <nav class="navbar">
             <ul>
                 <!-- style="background: -webkit-linear-gradient( #4d5dfb 0%, #08c8f6 74%); -webkit-background-clip: text;-webkit-text-fill-color: transparent;" -->
@@ -47,13 +47,14 @@
                     <input type="text" name="outputBox" id="visibleBox" placeholder="use buttons to add input" autocomplete="off" disabled="disabled">
 
                     <!-- do this: type="hidden" -->
-                    <input type="hidden" name="JSoutputBox" id="invisibleBox" placeholder="jsBox" autocomplete="off" disabled="disabled">
-                </form>
+                    <!-- <input type="hidden" name="JSoutputBox" id="invisibleBox" placeholder="jsBox" autocomplete="off" disabled="disabled"> -->
+                </form> 
                 <div class="mySciCalcbuttons">
                     <!-- document.calculation.output.value+='0' -->
                     <button type="button" value="0" onclick="appendPress(this)" class="number">0</button>
                     <button type="button" value="(" onclick="appendPress(this)" class="symbol">(</button>
                     <button type="button" value=")" onclick="appendPress(this)" class="symbol">)</button>
+                    <button type="button" value="clear" onclick="clearPress()" class="clearSymbol">C</button>
                     <button type="button" value="backSpace" onclick="backSpace()" class="clearSymbol">&#8617;</button>
                     <!-- BACKSPACE/UNDO SYMBOL IS &#8617; -->
                     
@@ -61,28 +62,35 @@
                     <button type="button" value="8" onclick="appendPress(this)" class="number">8</button>
                     <button type="button" value="9" onclick="appendPress(this)" class="number">9</button>
                     <button type="button" value="+" onclick="appendPress(this)" class="symbol">+</button>
+                    <button type="button" value="-" onclick="appendPress(this)" class="symbol">&minus;</button>
 
                     <button type="button" value="4" onclick="appendPress(this)" class="number">4</button>
                     <button type="button" value="5" onclick="appendPress(this)" class="number">5</button>
                     <button type="button" value="6" onclick="appendPress(this)" class="number">6</button>
-                    <button type="button" value="-" onclick="appendPress(this)" class="symbol">&minus;</button>
+                    <button type="button" value="*" onclick="appendPress(this)" class="symbol">&#10005;</button>
+                    <button type="button" value="/" onclick="appendPress(this)" class="symbol">/</button>
+
 
                     <button type="button" value="1" onclick="appendPress(this)" class="number">1</button>
                     <button type="button" value="2" onclick="appendPress(this)" class="number">2</button>
                     <button type="button" value="3" onclick="appendPress(this)" class="number">3</button>
-                    <button type="button" value="." onclick="appendPress(this)" class="symbol">.</button>
-
-                    <button type="button" value="*" onclick="appendPress(this)" class="symbol">&#10005;</button>
-                    <button type="button" value="/" onclick="appendPress(this)" class="symbol">/</button>
-
-                    <button type="button" value="Math.sqrt(" onclick="appendPress(this)" class="symbol">&radic;</button>
                     <button type="button" value="Math.PI" onclick="appendPress(this)" class="symbol">&pi;</button>
+                    <button type="button" value="Math.sqrt(" onclick="appendPress(this)" class="symbol">&radic;</button>
+
+                    <button type="button" value="Math.sin(" onclick="appendPress(this)" class="symbol">sin</button>
+                    <button type="button" value="Math.cos(" onclick="appendPress(this)" class="symbol">cos</button>
+                    <button type="button" value="Math.tan(" onclick="appendPress(this)" class="symbol">tan</button>
                     <button type="button" value="Math.log(" onclick="appendPress(this)" class="symbol">&#x33D1;</button> <!-- ln symbol -->
+                    <button type="button" value="Math.log10(" onclick="appendPress(this)" class="symbol">&#x33D2;<sub>10</sub></button> <!-- log symbol -->
 
-
-
-                    <button type="button" value="clear" onclick="clearPress()" class="clearSymbol">C</button>
+                    <button type="button" value="Math.asin(" onclick="appendPress(this)" class="symbol">sin<sup>-1</sup></button>
+                    <button type="button" value="Math.acos(" onclick="appendPress(this)" class="symbol">cos<sup>-1</sup></button>
+                    <button type="button" value="Math.atan(" onclick="appendPress(this)" class="symbol">tan<sup>-1</sup></button>
+                    <button type="button" value="." onclick="appendPress(this)" class="symbol">.</button>
                     <button type="button" value="=" onclick="evalFunc()" class="equalitySymbol">=</button>
+
+
+
 
                 </div>
 

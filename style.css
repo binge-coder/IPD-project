@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Saira:wght@300&display=swap');
-/* @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap'); */
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
 *{
     box-sizing: border-box;
     /* making margin and padding 0 fixed many bugs, its important */
@@ -184,7 +183,6 @@ aside a:hover{
     height: 35px;
     font-size: 18px;
     border-radius: 5px;
-    /* font-family: 'Varela Round', sans-serif; */
     font-family: 'Source Code Pro', monospace;
 }
 
@@ -204,8 +202,9 @@ aside a:hover{
     height: 42px;
     font-size: 20px;
     border-radius: 10px; 
-    /* font-family: 'Varela Round', sans-serif; */
-    font-family: 'Source Code Pro', monospace;
+    /* font-family: 'Source Code Pro', monospace; */
+    font-family: 'Source Sans Pro', sans-serif;
+
 
 
     /* font-weight: 600; */
@@ -233,8 +232,8 @@ aside a:hover{
     height: 42px;
     font-size: 20px;
     border-radius: 10px; 
-    /* font-family: 'Varela Round', sans-serif; */
-    font-family: 'Source Code Pro', monospace;
+    /* font-family: 'Source Code Pro', monospace; */
+    font-family: 'Source Sans Pro', sans-serif;
 
 
     /* font-weight: 600; */
