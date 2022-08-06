@@ -188,6 +188,8 @@ aside a:hover{
     font-family: 'Source Code Pro', monospace;
 }
 
+/* Simple calculator buttons start */
+
 .myCalcbuttons{ 
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -212,6 +214,16 @@ aside a:hover{
 .myCalcbuttons button:hover{
     border-color: dodgerblue;
 }
+
+/* Simple calculator buttons end */
+
+/* Scientific calculator buttons start */
+
+
+
+
+/* Scientific calculator buttons end */
+
 
 /* button specific styling */
 .number{
