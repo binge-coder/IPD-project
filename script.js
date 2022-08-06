@@ -1,9 +1,18 @@
 const myJsExpression = [];
+const myVisibleExpression = [];
 
 function evalExpression()
 {
     var answerString = myJsExpression.join('');
-    document.calculation.outputBox.value = eval(answerString);
+    var answer = eval(answerString);
+    myVisibleExpression.length = 0; //emptying  visible list
+    myVisibleExpression.push(answer);
+    showVisible();
+
+
+    // The following steps are not needed, it works fine even if I don't do these and I don't know why it works even without the following steps
+    myJsExpression.length = 0; //emptying list
+    myJsExpression.push(answer);
 
 }
 
@@ -32,10 +41,11 @@ function appendPress(objButton){
 }
 
 function clearPress(){
-    document.calculation.outputBox.value='';
+    // document.calculation.outputBox.value='';
     // document.calculation.JSoutputBox.value='';
     myJsExpression.length = 0;
-
+    myVisibleExpression.length = 0;
+    showVisible();
     // myJsExpression = []; not working idk why? maybe its making a new array without deleting the previous array ?
     
 }
@@ -55,37 +65,63 @@ function evalFunc(){
 }
 
 function backSpace() {
-    // backspace for visible box
-    var mystringVisible = document.calculation.outputBox.value;
-    document.calculation.outputBox.value = mystringVisible.substring(0,(mystringVisible.length)-1);
+    // // backspace for visible box
+    // var mystringVisible = document.calculation.outputBox.value;
+    // document.calculation.outputBox.value = mystringVisible.substring(0,(mystringVisible.length)-1);
 
-    // backspace for invisible box
-    var mystringInvisible = document.calculation.JSoutputBox.value;
-    document.calculation.JSoutputBox.value = mystringInvisible.substring(0,(mystringInvisible.length)-1);  
+    // // backspace for invisible box
+    // var mystringInvisible = document.calculation.JSoutputBox.value;
+    // document.calculation.JSoutputBox.value = mystringInvisible.substring(0,(mystringInvisible.length)-1);  
 
+    myVisibleExpression.pop();
+    showVisible();
 
-  }
+}
 
 // Legacy Code (when i was using <input> instead of buttons)
 // UPDATE: USING IT AGAIN NOW
 function appendVisible(objButton){
     if(objButton.value == '*')
     {
-        document.calculation.outputBox.value+='x';
+        // document.calculation.outputBox.value+='x';
+        myVisibleExpression.push('x');
+        showVisible();
+
     }
     // else if(objButton.value == 'mod')
     // {
     //     document.calculation.outputBox.value+='%';
 
     // }
-    else if(objButton.value == 'Math.sqrt('){
-        document.calculation.outputBox.value+='\u221A('; //unicode for square root
+    else if(objButton.value == 'Math.sqrt(')
+    {
+        // document.calculation.outputBox.value+='\u221A('; //unicode for square root
+        myVisibleExpression.push('\u221A(');
+        showVisible();
+
     }
-    else if(objButton.value == 'Math.PI'){
-        document.calculation.outputBox.value+='\u03C0'; //unicode for pi
+    else if(objButton.value == 'Math.PI')
+    {
+        // document.calculation.outputBox.value+='\u03C0'; //unicode for pi
+        myVisibleExpression.push('\u03C0');
+        showVisible();
+    }
+    else if(objButton.value == 'Math.log(')
+    {
+        myVisibleExpression.push('\u33D1(');
+        showVisible();
     }
     else
     {
-        document.calculation.outputBox.value+=objButton.value;
+        // document.calculation.outputBox.value+=objButton.value;
+        myVisibleExpression.push(objButton.value);
+        showVisible();
+
     }
+}
+
+function showVisible()
+{
+    var visibleString = myVisibleExpression.join('');
+    document.calculation.outputBox.value = visibleString;
 }
