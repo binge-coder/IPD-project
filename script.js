@@ -1,21 +1,6 @@
 const myJsExpression = [];
 const myVisibleExpression = [];
 
-function evalExpression()
-{
-    var answerString = myJsExpression.join('');
-    var answer = eval(answerString);
-    myVisibleExpression.length = 0; //emptying  visible list
-    myVisibleExpression.push(answer);
-    showVisible();
-
-
-    // The following steps are not needed, it works fine even if I don't do these and I don't know why it works even without the following steps
-    myJsExpression.length = 0; //emptying list
-    myJsExpression.push(answer);
-
-}
-
 function lengthExceed(){
     if(document.calculation.outputBox.value.length > 23)
     {
@@ -32,7 +17,7 @@ function appendPress(objButton){
         // document.calculation.outputBox.value+=objButton.value;
         appendVisible(objButton);
         
-        // for expressionlist
+        // for jsexpressionlist
         myJsExpression.push(objButton.value);
 
         // document.calculation.JSoutputBox.value+=objButton.value;
@@ -61,7 +46,17 @@ function evalFunc(){
     // document.calculation.JSoutputBox.value=eval(document.calculation.JSoutputBox.value);
 
     // get answer from parsing array
-    evalExpression();
+
+    var answerString = myJsExpression.join('');
+    var answer = eval(answerString);
+    myVisibleExpression.length = 0; //emptying  visible list
+    myVisibleExpression.push(answer);
+    showVisible();
+
+
+    // The following steps are not needed, it works fine even if I don't do these and I don't know why it works even without the following steps
+    myJsExpression.length = 0; //emptying list
+    myJsExpression.push(answer);
 }
 
 function backSpace() {
@@ -74,6 +69,7 @@ function backSpace() {
     // document.calculation.JSoutputBox.value = mystringInvisible.substring(0,(mystringInvisible.length)-1);  
 
     myVisibleExpression.pop();
+    myJsExpression.pop();
     showVisible();
 
 }
@@ -85,7 +81,6 @@ function appendVisible(objButton){
     {
         // document.calculation.outputBox.value+='x';
         myVisibleExpression.push('x');
-        showVisible();
 
     }
     // else if(objButton.value == 'mod')
@@ -97,27 +92,26 @@ function appendVisible(objButton){
     {
         // document.calculation.outputBox.value+='\u221A('; //unicode for square root
         myVisibleExpression.push('\u221A(');
-        showVisible();
 
     }
     else if(objButton.value == 'Math.PI')
     {
         // document.calculation.outputBox.value+='\u03C0'; //unicode for pi
         myVisibleExpression.push('\u03C0');
-        showVisible();
     }
     else if(objButton.value == 'Math.log(')
     {
         myVisibleExpression.push('\u33D1(');
-        showVisible();
     }
     else
     {
         // document.calculation.outputBox.value+=objButton.value;
         myVisibleExpression.push(objButton.value);
-        showVisible();
 
     }
+
+    showVisible();
+
 }
 
 function showVisible()
