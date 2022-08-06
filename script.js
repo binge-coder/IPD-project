@@ -103,6 +103,35 @@ function appendVisible(objButton){
     {
         myVisibleExpression.push('\u33D1(');
     }
+    else if(objButton.value == 'Math.log10(')
+    {
+        myVisibleExpression.push('\u33D2\u2081\u2080(');
+        // log<sub>10</sub>( symbol in unicode
+    }
+    else if(objButton.value == 'Math.sin(')
+    {
+        myVisibleExpression.push('sin(');
+    }
+    else if(objButton.value == 'Math.cos(')
+    {
+        myVisibleExpression.push('cos(');
+    }
+    else if(objButton.value == 'Math.tan(')
+    {
+        myVisibleExpression.push('tan(');
+    }
+    else if(objButton.value == 'Math.asin(')
+    {
+        myVisibleExpression.push('sin\u207B\u00B9(');
+    }
+    else if(objButton.value == 'Math.acos(')
+    {
+        myVisibleExpression.push('cos\u207B\u00B9(');
+    }
+        else if(objButton.value == 'Math.atan(')
+    {
+        myVisibleExpression.push('tan\u207B\u00B9(');
+    }
     else
     {
         // document.calculation.outputBox.value+=objButton.value;
