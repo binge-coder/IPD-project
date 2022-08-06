@@ -219,6 +219,31 @@ aside a:hover{
 
 /* Scientific calculator buttons start */
 
+.mySciCalcbuttons{ 
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    /* margin: 6px 5px ; */
+    grid-row-gap: 9px;
+    grid-column-gap: 10px;
+    padding: 10px;
+    
+}
+
+.mySciCalcbuttons button{
+    height: 42px;
+    font-size: 20px;
+    border-radius: 10px; 
+    /* font-family: 'Varela Round', sans-serif; */
+    font-family: 'Source Code Pro', monospace;
+
+
+    /* font-weight: 600; */
+    /* width: 50px; */   
+}
+.mySciCalcbuttons button:hover{
+    border-color: dodgerblue;
+}
+
 
 
 

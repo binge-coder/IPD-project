@@ -55,6 +55,12 @@ function appendVisible(objButton){
     //     document.calculation.outputBox.value+='%';
 
     // }
+    else if(objButton.value == 'Math.sqrt('){
+        document.calculation.outputBox.value+='\u221A('; //unicode for square root
+    }
+    else if(objButton.value == 'Math.PI'){
+        document.calculation.outputBox.value+='\u03C0'; //unicode for pi
+    }
     else
     {
         document.calculation.outputBox.value+=objButton.value;
