@@ -4,4 +4,4 @@
 
 # Things to know
 * **C** : the 'C' button on calculator clears the expression screen. It basically resets anything you typed earlier
-* &#8617; : the &#8617; button removes the character at the end of the expression (basically backspace).
+* **crossed left label** ; : this button removes the last character added (basically backspace)
