@@ -27,6 +27,10 @@ a{
     color: cyan; 
 }
 
+.content div p{
+    margin: 10px 0px;
+}
+
 .containAll {
     display: grid;
     grid-gap: 6px;
