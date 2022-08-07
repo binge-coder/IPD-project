@@ -208,10 +208,8 @@ aside a:hover{
     border-radius: 10px; 
     /* font-family: 'Source Code Pro', monospace; */
     font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bold;
 
-
-
-    /* font-weight: 600; */
     /* width: 50px; */   
 }
 .myCalcbuttons button:hover{
@@ -234,11 +232,11 @@ aside a:hover{
 
 .mySciCalcbuttons button{
     height: 45px;
-    font-size: 22px;
+    font-size: 20px;
     border-radius: 10px; 
     /* font-family: 'Source Code Pro', monospace; */
     font-family: 'Source Sans Pro', sans-serif;
-
+    font-weight: bold;
 
     /* font-weight: 600; */
     /* width: 50px; */   
@@ -295,7 +293,7 @@ label:hover{
     /* background: mediumpurple; */
     background: linear-gradient(to top left, darkorchid, magenta);
     border-color:#1c1c1c;
-    /* font-weight: bold; */    
+    /* font-weight: bold;     */
 
 }
 .clearSymbol{
